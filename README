@@ -1,11 +1,11 @@
 NAME
-    Plack::Handler::SCGI::AnyEvent - PSGI handler on AnyEvent::SCGI
+    Plack::Handler::AnyEvent::SCGI - PSGI handler on AnyEvent::SCGI
 
 SYNOPSIS
-      plackup -s SCGI::AnyEvent --port 22222
+      plackup -s AnyEvent::SCGI --port 22222
 
 DESCRIPTION
-    Plack::Handler::SCGI::AnyEvent is a standalone SCGI daemon running on
+    Plack::Handler::AnyEvent::SCGI is a standalone SCGI daemon running on
     AnyEvent::SCGI.
 
 AUTHOR

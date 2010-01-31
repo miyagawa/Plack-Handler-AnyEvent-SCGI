@@ -1,4 +1,4 @@
-package Plack::Handler::SCGI::AnyEvent;
+package Plack::Handler::AnyEvent::SCGI;
 
 use strict;
 use 5.008_001;
@@ -99,15 +99,15 @@ __END__
 
 =head1 NAME
 
-Plack::Handler::SCGI::AnyEvent - PSGI handler on AnyEvent::SCGI
+Plack::Handler::AnyEvent::SCGI - PSGI handler on AnyEvent::SCGI
 
 =head1 SYNOPSIS
 
-  plackup -s SCGI::AnyEvent --port 22222
+  plackup -s AnyEvent::SCGI --port 22222
 
 =head1 DESCRIPTION
 
-Plack::Handler::SCGI::AnyEvent is a standalone SCGI daemon running on L<AnyEvent::SCGI>.
+Plack::Handler::AnyEvent::SCGI is a standalone SCGI daemon running on L<AnyEvent::SCGI>.
 
 =head1 AUTHOR
 

@@ -2,7 +2,7 @@ use strict;
 use warnings;
 use Test::More;
 use Plack;
-use Plack::Handler::SCGI::AnyEvent;
+use Plack::Handler::AnyEvent::SCGI;
 use Plack::Test::Suite;
 use t::SCGIUtils;
 
@@ -22,7 +22,7 @@ sub run_server {
 
     $| = 0; # Test::Builder autoflushes this. reset!
 
-    my $server = Plack::Handler::SCGI::AnyEvent->new(
+    my $server = Plack::Handler::AnyEvent::SCGI->new(
         host        => '127.0.0.1',
         port        => $port,
     );
