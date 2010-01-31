@@ -2,6 +2,8 @@ use inc::Module::Install;
 name 'Plack-Handler-SCGI-AnyEvent';
 all_from 'lib/Plack/Handler/SCGI/AnyEvent.pm';
 readme_from 'lib/Plack/Handler/SCGI/AnyEvent.pm';
+requires 'Plack', 0.99_01;
+requires 'AnyEvent::SCGI';
 build_requires 'Test::More';
 test_requires 'Test::Requires';
 auto_include_deps;
