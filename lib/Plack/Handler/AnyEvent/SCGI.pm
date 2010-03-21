@@ -2,7 +2,7 @@ package Plack::Handler::AnyEvent::SCGI;
 
 use strict;
 use 5.008_001;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use AnyEvent::SCGI;
 use URI::Escape;
@@ -51,6 +51,7 @@ sub handle_request {
         'psgi.run_once'     => Plack::Util::FALSE,
         'psgi.streaming'    => Plack::Util::TRUE,
         'psgi.nonblocking'  => Plack::Util::TRUE,
+        'psgix.input.buffered' => Plack::Util::TRUE,
     };
 
     my $res = Plack::Util::run_app $app, $env;
