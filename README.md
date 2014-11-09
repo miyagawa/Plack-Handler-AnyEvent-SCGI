@@ -1,0 +1,24 @@
+# NAME
+
+Plack::Handler::AnyEvent::SCGI - PSGI handler on AnyEvent::SCGI
+
+# SYNOPSIS
+
+    plackup -s AnyEvent::SCGI --port 22222
+
+# DESCRIPTION
+
+Plack::Handler::AnyEvent::SCGI is a standalone SCGI daemon running on [AnyEvent::SCGI](https://metacpan.org/pod/AnyEvent::SCGI).
+
+# AUTHOR
+
+Tatsuhiko Miyagawa <miyagawa@bulknews.net>
+
+# LICENSE
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+# SEE ALSO
+
+[AnyEvent::SCGI](https://metacpan.org/pod/AnyEvent::SCGI) [Plack::Handler::SCGI](https://metacpan.org/pod/Plack::Handler::SCGI)

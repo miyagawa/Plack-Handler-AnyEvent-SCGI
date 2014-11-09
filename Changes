@@ -1,5 +1,7 @@
 Revision history for Perl extension Plack::Handler::SCGI::AnyEvent
 
+{{$NEXT}}
+
 0.02  Sun Mar 21 01:38:37 PDT 2010
         - Added psgix.input.buffered
 
